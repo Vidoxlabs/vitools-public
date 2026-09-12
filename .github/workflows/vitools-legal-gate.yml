@@ -1,0 +1,50 @@
+name: ViTools Legal Gate
+
+on:
+  pull_request:
+    paths:
+      - '.agents/**'
+      - 'archive/vendor/**'
+      - 'platforms/**'
+      - 'scripts/vitools-legal-gate.sh'
+      - '.github/workflows/vitools-legal-gate.yml'
+  push:
+    branches: [main]
+    paths:
+      - '.agents/**'
+      - 'archive/vendor/**'
+      - 'platforms/**'
+
+jobs:
+  legal-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate MANIFEST.json
+        run: python3 -c "import json; json.load(open('archive/vendor/MANIFEST.json'))"
+
+      - name: Validate servers.yaml
+        run: python3 -c "import yaml; yaml.safe_load(open('.agents/mcp/servers.yaml'))"
+
+      - name: Run legal gate script
+        run: bash scripts/vitools-legal-gate.sh
+
+      - name: Install vitools-sync and run overlap checks on canonical skills
+        run: |
+          pip install -e tools/vitools-sync
+          for skill in .agents/skills/*/SKILL.md; do
+            vitools-sync legal check "$skill"
+          done
+
+      - name: Block archive paths in agent-facing tree
+        run: |
+          if find .agents -type l -lname '*archive/vendor*' 2>/dev/null | grep -q .; then
+            echo "ERROR: symlink from .agents to archive/vendor detected"
+            exit 1
+          fi
+          if [ -d platforms ] && find platforms -type l -lname '*archive/vendor*' 2>/dev/null | grep -q .; then
+            echo "ERROR: platforms emit symlinks into archive/vendor"
+            exit 1
+          fi
+          echo "No archive-to-agent symlink or platform emit violations"

@@ -1,0 +1,52 @@
+{
+  "manifest_version": "0.3",
+  "name": "paper-desktop",
+  "display_name": "Paper Desktop",
+  "version": "0.1.0",
+  "description": "Design on a canvas that Claude can read and write to — built on web standards.",
+  "long_description": "Paper is a professional design tool built on HTML and CSS. With this extension, Claude can read your designs — structure, styles, screenshots, and text — and write back to the canvas in real time. Use it to turn designs into code, generate UI from your codebase, pull in real content from connected data sources, and keep your designs in sync with the tools your team already uses.",
+  "author": {
+    "name": "Paper"
+  },
+  "icon": "./assets/logo@512w.png",
+  "homepage": "https://paper.design",
+  "documentation": "https://paper.design/docs/mcp",
+  "server": {
+    "type": "node",
+    "entry_point": "./src/index.js",
+    "mcp_config": {
+      "command": "npx",
+      "args": ["mcp-remote", "http://127.0.0.1:29979/mcp"]
+    }
+  },
+  "tools": [
+    {
+      "name": "get_basic_info",
+      "description": "Get essential context about the current design: file name, page name, node count, list of artboards with their dimensions, and a list of font families used in the document. Call this first to understand the canvas situation."
+    }
+  ],
+  "screenshots": [
+    "./assets/barley-layout.png",
+    "./assets/barley-feedback.png",
+    "./assets/barley-responsive-frames.png"
+  ],
+  "tools_generated": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paper-design/agent-plugins.git"
+  },
+  "privacy_policies": ["https://paper.design/privacy"],
+  "keywords": [
+    "paper",
+    "design",
+    "ui",
+    "canvas",
+    "html",
+    "css",
+    "design-to-code",
+    "code-to-design",
+    "prototyping",
+    "mcp",
+    "design-system"
+  ]
+}

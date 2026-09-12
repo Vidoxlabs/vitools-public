@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "scope": "vilabs/tools/vilabs_mcp/vitools/",
+  "scope_note": "Stable MCP tooling fleet in ViLabs monorepo. Broad skills/plugins vendoring in vitools git repo is OUT OF SCOPE (see ADR-0003).",
+  "generated_at": "2026-06-17",
+  "phase_0_conclusion": "No third-party vendored plugin trees in MCP fleet scope. Phase 0 establishes native authoring pipeline and Memorix hooks instead of bulk quarantine.",
+  "drift_evidence": {
+    "command": "vilabs drift analyze",
+    "cwd": "vilabs/tools/vilabs_cli",
+    "output_summary": "review_packets=0 implementation_sweeps=0 artifact_format=dual",
+    "report_path": "vilabs/tools/vilabs_cli/runtime/reports/drift-analysis"
+  },
+  "quarantine_policy": {
+    "archive_path": "archive/vendor/",
+    "agent_facing_forbidden": true,
+    "ci_workflow": ".github/workflows/vitools-legal-gate.yml"
+  },
+  "mcp_fleet_inventory": [
+    { "name": "alloy", "license": "MIT", "owner": "vidoxlabs", "vendored": false },
+    { "name": "cookbook", "license": "MIT", "owner": "vidoxlabs", "vendored": false },
+    { "name": "filebrowser", "license": "MIT", "owner": "vidoxlabs", "vendored": false },
+    { "name": "gitea", "license": "MIT", "owner": "vidoxlabs", "vendored": false },
+    { "name": "hassio_interop", "license": "MIT", "owner": "vidoxlabs", "vendored": false },
+    { "name": "immich", "license": "MIT", "owner": "vidoxlabs", "vendored": false },
+    { "name": "log_diagnostics", "license": "MIT", "owner": "vidoxlabs", "vendored": false },
+    { "name": "loki", "license": "MIT", "owner": "vidoxlabs", "vendored": false },
+    { "name": "memorix", "license": "vidoxlabs-native", "owner": "vidoxlabs", "vendored": false, "note": "No LICENSE file; primary Memorix integration" },
+    { "name": "music_assistant", "license": "MIT", "owner": "vidoxlabs", "vendored": false },
+    { "name": "omada_controller", "license": "MIT", "owner": "vidoxlabs", "vendored": false },
+    { "name": "open_terminal", "license": "MIT", "owner": "vidoxlabs", "vendored": false },
+    { "name": "open_webui", "license": "MIT", "owner": "vidoxlabs", "vendored": false },
+    { "name": "paperless", "license": "MIT", "owner": "vidoxlabs", "vendored": false },
+    { "name": "prometheus", "license": "MIT", "owner": "vidoxlabs", "vendored": false },
+    { "name": "remote_workers", "license": "MIT", "owner": "vidoxlabs", "vendored": false, "note": "Nested git submodule" },
+    { "name": "sonarqube", "license": "MIT", "owner": "vidoxlabs", "vendored": false },
+    { "name": "standards", "license": "vidoxlabs-native", "owner": "vidoxlabs", "vendored": false, "note": "MCP standard pack; no LICENSE file" },
+    { "name": "syncthing", "license": "MIT", "owner": "vidoxlabs", "vendored": false },
+    { "name": "systems", "license": "MIT", "owner": "vidoxlabs", "vendored": false },
+    { "name": "terminal", "license": "MIT", "owner": "vidoxlabs", "vendored": false },
+    { "name": "traefik", "license": "MIT", "owner": "vidoxlabs", "vendored": false },
+    { "name": "trilium", "license": "MIT", "owner": "vidoxlabs", "vendored": false },
+    { "name": "vault", "license": "MIT", "owner": "vidoxlabs", "vendored": false },
+    { "name": "vidocs_knowledge", "license": "MIT", "owner": "vidoxlabs", "vendored": false },
+    { "name": "wireguard", "license": "MIT", "owner": "vidoxlabs", "vendored": false }
+  ],
+  "archived_packages": [],
+  "out_of_scope": {
+    "description": "Vendored skills/plugins mirror in vitools git repo",
+    "paths": ["skills/", "plugins/"],
+    "package_count_estimate": 37,
+    "action": "Deferred to separate future workstream per ADR-0003"
+  }
+}

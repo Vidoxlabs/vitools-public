@@ -1,0 +1,57 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Lint Markdown
+        uses: DavidAnson/markdownlint-cli2-action@v15
+        with:
+          globs: '**/*.md'
+          config: >
+            {
+              "MD013": false,
+              "MD033": false
+            }
+
+      - name: Validate YAML
+        run: |
+          find . -name "*.yml" -o -name "*.yaml" | grep -v node_modules | while read file; do
+            python3 -c "import yaml; yaml.safe_load(open('$file'))" 2>&1 || echo "Error in $file"
+          done
+
+      - name: Validate JSON
+        run: |
+          find . -name "*.json" | grep -v node_modules | while read file; do
+            python3 -c "import json; json.load(open('$file'))" 2>&1 || echo "Error in $file"
+          done
+
+  check-structure:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check required files exist
+        run: |
+          test -f README.md || (echo "README.md missing" && exit 1)
+          test -f LICENSE || (echo "LICENSE missing" && exit 1)
+          test -f CODEOWNERS || (echo "CODEOWNERS missing" && exit 1)
+          echo "All required files present"
+
+      - name: Check Skills structure
+        run: |
+          for skill in skills/*/; do
+            if [ -d "$skill" ]; then
+              if [ ! -f "${skill}SKILL.md" ]; then
+                echo "Warning: ${skill} missing SKILL.md"
+              fi
+            fi
+          done

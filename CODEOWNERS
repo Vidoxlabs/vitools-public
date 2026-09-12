@@ -1,0 +1,16 @@
+# Vidoxlabs Code Owners
+# See https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Core team leads
+* @vidoxlabs/core-team
+
+# Skills and plugins maintained by the AI Platform team
+/skills/ @vidoxlabs/ai-platform
+/plugins/ @vidoxlabs/ai-platform
+
+# Documentation and governance
+/Instructions/ @vidoxlabs/docs-team
+/cookbooks/ @vidoxlabs/docs-team
+
+# MCP tooling
+/mcp_tooling/ @vidoxlabs/devtools

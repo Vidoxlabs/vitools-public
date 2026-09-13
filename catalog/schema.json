@@ -117,7 +117,7 @@
         "mcp_uri": { "type": "string", "pattern": "^vitools://(skill|agent)/[a-z0-9-]+$" },
         "install": {
           "type": "object",
-          "required": ["generic", "claude-code", "cursor", "agent_prompt"],
+          "required": ["cursor", "agent_prompt"],
           "properties": {
             "generic": { "type": "string" },
             "claude-code": { "type": "string" },

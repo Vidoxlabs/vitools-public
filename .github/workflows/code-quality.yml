@@ -1,0 +1,42 @@
+name: Code Quality
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: '0 0 * * 1'  # Weekly on Monday
+
+jobs:
+  link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check for broken links
+        uses: lycheeverse/lychee-action@v1
+        with:
+          args: --timeout 30 --retry 3 --exclude-all-private README.md
+          fail: false
+
+  format-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check JSON formatting
+        run: |
+          find . -name "*.json" -not -path "*/node_modules/*" | while read file; do
+            if ! python3 -m json.tool "$file" > /dev/null 2>&1; then
+              echo "Invalid JSON: $file"
+              exit 1
+            fi
+          done
+
+      - name: Check trailing whitespace
+        run: |
+          if grep -rnI "[[:space:]]$" --include="*.md" --include="*.yml" --include="*.yaml" --include="*.json" . | grep -v "\.git"; then
+            echo "Trailing whitespace found"
+            exit 1
+          fi

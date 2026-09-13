@@ -1,0 +1,539 @@
+{
+  "name": "vitools",
+  "description": "Vidoxlabs ViTools public skill and agent registry",
+  "version": "1.0.0",
+  "skills": [
+    {
+      "name": "agent-compatibility-check",
+      "description": "Check repository readiness for agent-assisted development",
+      "path": "skills/agent-compatibility-check/SKILL.md"
+    },
+    {
+      "name": "autonomous-pipeline",
+      "description": "Full autonomous engineering pipeline",
+      "path": "skills/autonomous-pipeline/SKILL.md"
+    },
+    {
+      "name": "bigquery-dbt",
+      "description": "dbt transformation pipelines on BigQuery",
+      "path": "skills/bigquery-dbt/SKILL.md"
+    },
+    {
+      "name": "bigquery-development",
+      "description": "BigQuery query optimization and cost management",
+      "path": "skills/bigquery-development/SKILL.md"
+    },
+    {
+      "name": "browser-automation-testing",
+      "description": "Automate browser interactions via MCP or Playwright",
+      "path": "skills/browser-automation-testing/SKILL.md"
+    },
+    {
+      "name": "browser-testing",
+      "description": "Browser-based end-to-end testing with Playwright",
+      "path": "skills/browser-testing/SKILL.md"
+    },
+    {
+      "name": "challenge-my-thinking",
+      "description": "Socratic stress-test for plans and decisions before commitment",
+      "path": "skills/challenge-my-thinking/SKILL.md"
+    },
+    {
+      "name": "check-compiler-errors",
+      "description": "Run compile and type-check commands and report failures",
+      "path": "skills/check-compiler-errors/SKILL.md"
+    },
+    {
+      "name": "clean-stale-branches",
+      "description": "Remove local branches with no remote tracking branch",
+      "path": "skills/clean-stale-branches/SKILL.md"
+    },
+    {
+      "name": "cli-for-agents",
+      "description": "Design CLIs that coding agents can call reliably and parse",
+      "path": "skills/cli-for-agents/SKILL.md"
+    },
+    {
+      "name": "code-quality-review",
+      "description": "Strict maintainability and code quality review",
+      "path": "skills/code-quality-review/SKILL.md"
+    },
+    {
+      "name": "code-simplification",
+      "description": "Simplify code without changing behavior",
+      "path": "skills/code-simplification/SKILL.md"
+    },
+    {
+      "name": "codebase-architect",
+      "description": "Systematic multi-repo codebase analysis and architecture",
+      "path": "skills/codebase-architect/SKILL.md"
+    },
+    {
+      "name": "community-server-design",
+      "description": "Compartmentalized community server design for AI companies",
+      "path": "skills/community-server-design/SKILL.md"
+    },
+    {
+      "name": "content-experimentation-best-practices",
+      "description": "Design and analyze content A/B experiments",
+      "path": "skills/content-experimentation-best-practices/SKILL.md"
+    },
+    {
+      "name": "content-modeling",
+      "description": "Structured content model design for headless CMS",
+      "path": "skills/content-modeling/SKILL.md"
+    },
+    {
+      "name": "context-extraction",
+      "description": "Extract domain knowledge for custom analysis skills",
+      "path": "skills/context-extraction/SKILL.md"
+    },
+    {
+      "name": "control-cli",
+      "description": "Drive and inspect interactive CLIs with a local harness",
+      "path": "skills/control-cli/SKILL.md"
+    },
+    {
+      "name": "control-ui",
+      "description": "Drive and inspect web UIs with a local browser harness",
+      "path": "skills/control-ui/SKILL.md"
+    },
+    {
+      "name": "dashboard-building",
+      "description": "Self-contained interactive HTML dashboards",
+      "path": "skills/dashboard-building/SKILL.md"
+    },
+    {
+      "name": "data-analysis",
+      "description": "Answer data questions from lookups to full analyses",
+      "path": "skills/data-analysis/SKILL.md"
+    },
+    {
+      "name": "data-apps",
+      "description": "Build interactive data apps and dashboards",
+      "path": "skills/data-apps/SKILL.md"
+    },
+    {
+      "name": "data-exploration",
+      "description": "Profile and explore datasets before analysis",
+      "path": "skills/data-exploration/SKILL.md"
+    },
+    {
+      "name": "data-loss-prevention",
+      "description": "Halt and confirm before destructive commands",
+      "path": "skills/data-loss-prevention/SKILL.md"
+    },
+    {
+      "name": "data-quality",
+      "description": "Profile, clean, and monitor dataset quality",
+      "path": "skills/data-quality/SKILL.md"
+    },
+    {
+      "name": "data-visualization",
+      "description": "Create effective charts with Python visualization libraries",
+      "path": "skills/data-visualization/SKILL.md"
+    },
+    {
+      "name": "dataflow-streaming",
+      "description": "Streaming and batch processing with Beam and Dataflow",
+      "path": "skills/dataflow-streaming/SKILL.md"
+    },
+    {
+      "name": "deep-research",
+      "description": "Sustained, source-backed investigation with compared evidence",
+      "path": "skills/deep-research/SKILL.md"
+    },
+    {
+      "name": "design-system-adherence",
+      "description": "Enforce design system consistency for visual assets",
+      "path": "skills/design-system-adherence/SKILL.md"
+    },
+    {
+      "name": "deslop",
+      "description": "Strip AI-generated code slop from diffs before review",
+      "path": "skills/deslop/SKILL.md"
+    },
+    {
+      "name": "document-coauthoring",
+      "description": "Structured document co-authoring workflow",
+      "path": "skills/document-coauthoring/SKILL.md"
+    },
+    {
+      "name": "documentation-canvas",
+      "description": "Visual documentation canvas for complex systems",
+      "path": "skills/documentation-canvas/SKILL.md"
+    },
+    {
+      "name": "durable-objects-patterns",
+      "description": "Stateful coordination patterns for edge applications",
+      "path": "skills/durable-objects-patterns/SKILL.md"
+    },
+    {
+      "name": "edge-agents",
+      "description": "Build stateful AI agents on edge compute platforms",
+      "path": "skills/edge-agents/SKILL.md"
+    },
+    {
+      "name": "evidence-answering",
+      "description": "Require evidence for claims about Vidoxlabs systems.",
+      "path": "skills/evidence-answering/SKILL.md"
+    },
+    {
+      "name": "fastly-cli-ngwaf",
+      "description": "Fastly CLI and NGWAF configuration",
+      "path": "skills/fastly-cli-ngwaf/SKILL.md"
+    },
+    {
+      "name": "fastly-compute",
+      "description": "Build Fastly Compute WASM applications",
+      "path": "skills/fastly-compute/SKILL.md"
+    },
+    {
+      "name": "figma-code-connect",
+      "description": "Connect Figma components to code components",
+      "path": "skills/figma-code-connect/SKILL.md"
+    },
+    {
+      "name": "figma-plugin-api",
+      "description": "Programmatic Figma file manipulation via Plugin API",
+      "path": "skills/figma-plugin-api/SKILL.md"
+    },
+    {
+      "name": "firebase-basics",
+      "description": "Core Firebase setup and service configuration",
+      "path": "skills/firebase-basics/SKILL.md"
+    },
+    {
+      "name": "firestore-patterns",
+      "description": "Firestore data modeling, queries, and security",
+      "path": "skills/firestore-patterns/SKILL.md"
+    },
+    {
+      "name": "fix-ci",
+      "description": "Diagnose and fix failing CI checks with focused root-cause fixes",
+      "path": "skills/fix-ci/SKILL.md"
+    },
+    {
+      "name": "fix-merge-conflicts",
+      "description": "Resolve merge conflicts non-interactively with validated results",
+      "path": "skills/fix-merge-conflicts/SKILL.md"
+    },
+    {
+      "name": "gcp-data-pipelines",
+      "description": "Build and operate data pipelines on GCP",
+      "path": "skills/gcp-data-pipelines/SKILL.md"
+    },
+    {
+      "name": "get-pr-comments",
+      "description": "Fetch and summarize PR review comments into actionable items",
+      "path": "skills/get-pr-comments/SKILL.md"
+    },
+    {
+      "name": "gradio-ui",
+      "description": "Build Gradio web UIs for ML model demos",
+      "path": "skills/gradio-ui/SKILL.md"
+    },
+    {
+      "name": "huggingface-datasets",
+      "description": "Create and manage datasets on Hugging Face Hub",
+      "path": "skills/huggingface-datasets/SKILL.md"
+    },
+    {
+      "name": "image-generation-guidance",
+      "description": "Guidance for AI image generation and editing",
+      "path": "skills/image-generation-guidance/SKILL.md"
+    },
+    {
+      "name": "infrastructure-audit",
+      "description": "Infrastructure security and compliance audit",
+      "path": "skills/infrastructure-audit/SKILL.md"
+    },
+    {
+      "name": "internal-comms",
+      "description": "Write clear internal communications for any audience",
+      "path": "skills/internal-comms/SKILL.md"
+    },
+    {
+      "name": "loop-on-ci",
+      "description": "Iteratively fix CI failures until all required checks pass",
+      "path": "skills/loop-on-ci/SKILL.md"
+    },
+    {
+      "name": "make-pr-easy-to-review",
+      "description": "Clean history and description so reviewers can focus on substance",
+      "path": "skills/make-pr-easy-to-review/SKILL.md"
+    },
+    {
+      "name": "mcp-server-building",
+      "description": "Build and deploy MCP servers with tools and auth",
+      "path": "skills/mcp-server-building/SKILL.md"
+    },
+    {
+      "name": "meeting-preparation",
+      "description": "Prepare meetings with context and clear outcomes",
+      "path": "skills/meeting-preparation/SKILL.md"
+    },
+    {
+      "name": "memory-consolidation",
+      "description": "Consolidate and maintain agent memory files",
+      "path": "skills/memory-consolidation/SKILL.md"
+    },
+    {
+      "name": "memory-systems",
+      "description": "Agent memory system design and maintenance",
+      "path": "skills/memory-systems/SKILL.md"
+    },
+    {
+      "name": "model-evaluation",
+      "description": "Standardized ML model evaluation and benchmarking",
+      "path": "skills/model-evaluation/SKILL.md"
+    },
+    {
+      "name": "new-branch-and-pr",
+      "description": "Branch, work, and open a clean PR in one workflow",
+      "path": "skills/new-branch-and-pr/SKILL.md"
+    },
+    {
+      "name": "observability-monitoring",
+      "description": "System health monitoring with logs, metrics, and SLOs",
+      "path": "skills/observability-monitoring/SKILL.md"
+    },
+    {
+      "name": "onboarding-flow",
+      "description": "Guided onboarding for new users or agents",
+      "path": "skills/onboarding-flow/SKILL.md"
+    },
+    {
+      "name": "parallel-implementations",
+      "description": "Run parallel implementations and pick the best",
+      "path": "skills/parallel-implementations/SKILL.md"
+    },
+    {
+      "name": "pdf",
+      "description": "Read, create, and review PDF files with Python tools",
+      "path": "skills/pdf/SKILL.md"
+    },
+    {
+      "name": "performance-optimization",
+      "description": "Profile, optimize, and verify performance gains",
+      "path": "skills/performance-optimization/SKILL.md"
+    },
+    {
+      "name": "playwright-testing",
+      "description": "End-to-end testing with Playwright",
+      "path": "skills/playwright-testing/SKILL.md"
+    },
+    {
+      "name": "plugin-creation",
+      "description": "Create plugins for agent platforms",
+      "path": "skills/plugin-creation/SKILL.md"
+    },
+    {
+      "name": "plugin-scaffolding",
+      "description": "Scaffold plugins for agent platforms",
+      "path": "skills/plugin-scaffolding/SKILL.md"
+    },
+    {
+      "name": "portable-text",
+      "description": "Portable Text conversion and rendering",
+      "path": "skills/portable-text/SKILL.md"
+    },
+    {
+      "name": "pr-walkthrough",
+      "description": "Interactive PR review walkthrough",
+      "path": "skills/pr-walkthrough/SKILL.md"
+    },
+    {
+      "name": "project-planning-visual",
+      "description": "Visual project plan from a PRD",
+      "path": "skills/project-planning-visual/SKILL.md"
+    },
+    {
+      "name": "release-notes",
+      "description": "Generate release notes from commit history",
+      "path": "skills/release-notes/SKILL.md"
+    },
+    {
+      "name": "repo-review",
+      "description": "Structured repository review for quality, security, and architecture",
+      "path": "skills/repo-review/SKILL.md"
+    },
+    {
+      "name": "repo-scaffold",
+      "description": "Scaffold missing config files for any GitHub repository",
+      "path": "skills/repo-scaffold/SKILL.md"
+    },
+    {
+      "name": "research-synthesis-tool",
+      "description": "Synthesize research findings into coherent summaries",
+      "path": "skills/research-synthesis-tool/SKILL.md"
+    },
+    {
+      "name": "review-and-ship",
+      "description": "Review, test, commit, and ship a branch through a PR",
+      "path": "skills/review-and-ship/SKILL.md"
+    },
+    {
+      "name": "run-smoke-tests",
+      "description": "Run smoke tests, debug failures, and verify fixes",
+      "path": "skills/run-smoke-tests/SKILL.md"
+    },
+    {
+      "name": "sandboxed-execution",
+      "description": "Build sandboxed code execution environments",
+      "path": "skills/sandboxed-execution/SKILL.md"
+    },
+    {
+      "name": "security-monitoring",
+      "description": "Security detection rules and incident response",
+      "path": "skills/security-monitoring/SKILL.md"
+    },
+    {
+      "name": "seo-aeo-best-practices",
+      "description": "SEO and AI-answer-engine optimization best practices",
+      "path": "skills/seo-aeo-best-practices/SKILL.md"
+    },
+    {
+      "name": "skill-creation",
+      "description": "Interactively create new skills from scratch",
+      "path": "skills/skill-creation/SKILL.md"
+    },
+    {
+      "name": "skill-mining",
+      "description": "Mine external repos into Vidoxlabs-native skills",
+      "path": "skills/skill-mining/SKILL.md"
+    },
+    {
+      "name": "skills-reviewer",
+      "description": "Validate skills against required format and conventions",
+      "path": "skills/skills-reviewer/SKILL.md"
+    },
+    {
+      "name": "skills-template",
+      "description": "Canonical formatting standard for Vidoxlabs skills",
+      "path": "skills/skills-template/SKILL.md"
+    },
+    {
+      "name": "sql-queries",
+      "description": "Write and optimize SQL across Snowflake, BigQuery, Databricks, PostgreSQL",
+      "path": "skills/sql-queries/SKILL.md"
+    },
+    {
+      "name": "stakeholder-translator",
+      "description": "Reframe technical substance for different audiences without altering facts",
+      "path": "skills/stakeholder-translator/SKILL.md"
+    },
+    {
+      "name": "statistical-analysis",
+      "description": "Apply statistical methods with proper interpretation",
+      "path": "skills/statistical-analysis/SKILL.md"
+    },
+    {
+      "name": "structured-commits",
+      "description": "Focused commits with messages that explain why",
+      "path": "skills/structured-commits/SKILL.md"
+    },
+    {
+      "name": "structured-debugging",
+      "description": "Systematic debugging from reproduce to verified fix",
+      "path": "skills/structured-debugging/SKILL.md"
+    },
+    {
+      "name": "structured-extraction",
+      "description": "Extract structured data from unstructured text",
+      "path": "skills/structured-extraction/SKILL.md"
+    },
+    {
+      "name": "technical-planning",
+      "description": "Structured technical plans for multi-step tasks",
+      "path": "skills/technical-planning/SKILL.md"
+    },
+    {
+      "name": "transcript-learning",
+      "description": "Extract durable preferences from chat transcripts",
+      "path": "skills/transcript-learning/SKILL.md"
+    },
+    {
+      "name": "v37-validation",
+      "description": "Validate changes against operational expectations",
+      "path": "skills/v37-validation/SKILL.md"
+    },
+    {
+      "name": "vcl-testing",
+      "description": "Test and lint Fastly VCL locally with falco",
+      "path": "skills/vcl-testing/SKILL.md"
+    },
+    {
+      "name": "verify-this",
+      "description": "Prove or disprove a claim with fresh local evidence",
+      "path": "skills/verify-this/SKILL.md"
+    },
+    {
+      "name": "viceroy",
+      "description": "Local Fastly Compute WASM runtime for Rust development",
+      "path": "skills/viceroy/SKILL.md"
+    },
+    {
+      "name": "web-performance",
+      "description": "Web performance analysis with Chrome DevTools",
+      "path": "skills/web-performance/SKILL.md"
+    },
+    {
+      "name": "weekly-review",
+      "description": "Weekly synthesis of commits by category",
+      "path": "skills/weekly-review/SKILL.md"
+    },
+    {
+      "name": "what-did-i-get-done",
+      "description": "Summarize commits into a concise status update",
+      "path": "skills/what-did-i-get-done/SKILL.md"
+    },
+    {
+      "name": "work-verification",
+      "description": "Verify work with a dedicated subagent before shipping",
+      "path": "skills/work-verification/SKILL.md"
+    },
+    {
+      "name": "workers-production",
+      "description": "Production patterns for edge Workers",
+      "path": "skills/workers-production/SKILL.md"
+    },
+    {
+      "name": "worktree-management",
+      "description": "Manage git worktrees for parallel branches",
+      "path": "skills/worktree-management/SKILL.md"
+    },
+    {
+      "name": "wrangler-cli",
+      "description": "Wrangler CLI for Workers development and deployment",
+      "path": "skills/wrangler-cli/SKILL.md"
+    },
+    {
+      "name": "xvcl",
+      "description": "VCL transpiler with metaprogramming for Fastly",
+      "path": "skills/xvcl/SKILL.md"
+    }
+  ],
+  "agents": [
+    {
+      "name": "legal-gate",
+      "description": ">-\n  Reviews license and origin of skill and agent files. Checks for vendor\n  branding, missing licenses, and vendor arc",
+      "path": "agents/legal-gate/AGENT.md"
+    },
+    {
+      "name": "rewrite-orchestrator",
+      "description": ">-\n  Coordinates catalog, concept extraction, rewrite, legal, and\n  verification sub-agents for the ViTools rewrite pipe",
+      "path": "agents/rewrite-orchestrator/AGENT.md"
+    },
+    {
+      "name": "skill-author",
+      "description": ">-\n  Writes a first-party SKILL.md from a concept card or external reference.\n  Produces original Vidoxlabs prose with r",
+      "path": "agents/skill-author/AGENT.md"
+    },
+    {
+      "name": "vitools-catalog-maintainer",
+      "description": ">-\n  Builds, validates, and maintains the ViTools public catalog. Runs the\n  catalog builder, legal gate, and inventory ",
+      "path": "agents/vitools-catalog-maintainer/AGENT.md"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+# Vidoxlabs Code Owners
+# See https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Everything
+* @Vioxniv
+
+# Skills and agents
+/skills/ @Vioxniv
+/agents/ @Vioxniv
+
+# Catalog and tooling
+/catalog/ @Vioxniv
+/tools/ @Vioxniv
+/scripts/ @Vioxniv
+
+# Documentation and governance
+/Instructions/ @Vioxniv
+/cookbooks/ @Vioxniv
+/decisions/ @Vioxniv

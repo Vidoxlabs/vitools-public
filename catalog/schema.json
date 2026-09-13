@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vidoxlabs.dev/vitools/catalog/schema.json",
+  "title": "ViTools Catalog",
+  "description": "Schema for vitools.catalog.json — the public, site/MCP-facing catalog of Vidoxlabs skills and agents.",
+  "type": "object",
+  "required": [
+    "version",
+    "generated_at",
+    "source_commit",
+    "homepage",
+    "mcp",
+    "repo",
+    "counts",
+    "items"
+  ],
+  "properties": {
+    "version": { "type": "string", "description": "Catalog schema version" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "source_commit": {
+      "type": "string",
+      "description": "Git SHA of the commit that generated this catalog"
+    },
+    "homepage": { "type": "string", "format": "uri" },
+    "mcp": { "type": "string", "format": "uri" },
+    "repo": { "type": "string", "format": "uri" },
+    "counts": {
+      "type": "object",
+      "required": ["skills", "agents", "archived_vendor"],
+      "properties": {
+        "skills": { "type": "integer", "minimum": 0 },
+        "agents": { "type": "integer", "minimum": 0 },
+        "archived_vendor": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "items": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/catalog_item" }
+    }
+  },
+  "$defs": {
+    "category_enum": {
+      "enum": [
+        "agents",
+        "automation",
+        "cloud",
+        "data",
+        "design",
+        "docs",
+        "eval",
+        "git",
+        "infra",
+        "mcp",
+        "research",
+        "safety",
+        "security",
+        "web"
+      ]
+    },
+    "status_enum": {
+      "enum": ["intake", "promoted", "superseded"]
+    },
+    "origin_enum": {
+      "enum": ["vidoxlabs", "derived", "vendor-archive"]
+    },
+    "platform_enum": {
+      "type": "string",
+      "enum": ["claude-code", "cursor", "copilot", "opencode", "generic"]
+    },
+    "catalog_item": {
+      "type": "object",
+      "required": [
+        "id",
+        "kind",
+        "slug",
+        "name",
+        "title",
+        "description",
+        "license",
+        "origin",
+        "status",
+        "public",
+        "category",
+        "tags",
+        "platforms",
+        "path",
+        "html_url",
+        "raw_url",
+        "mcp_uri",
+        "install"
+      ],
+      "properties": {
+        "id": { "type": "string", "pattern": "^(skill|agent):[a-z0-9-]+$" },
+        "kind": { "enum": ["skill", "agent"] },
+        "slug": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "name": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string", "maxLength": 1024 },
+        "summary": {
+          "type": "string",
+          "description": "One-line card text for vidoxlabs.dev/vitools"
+        },
+        "license": { "type": "string" },
+        "origin": { "$ref": "#/$defs/origin_enum" },
+        "status": { "$ref": "#/$defs/status_enum" },
+        "public": { "type": "boolean" },
+        "category": { "$ref": "#/$defs/category_enum" },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "platforms": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/platform_enum" },
+          "minItems": 1
+        },
+        "path": { "type": "string", "description": "Repo-relative path to entry file" },
+        "html_url": { "type": "string", "format": "uri" },
+        "raw_url": { "type": "string", "format": "uri" },
+        "mcp_uri": { "type": "string", "pattern": "^vitools://(skill|agent)/[a-z0-9-]+$" },
+        "install": {
+          "type": "object",
+          "required": ["generic", "claude-code", "cursor", "agent_prompt"],
+          "properties": {
+            "generic": { "type": "string" },
+            "claude-code": { "type": "string" },
+            "cursor": { "type": "string" },
+            "agent_prompt": { "type": "string" }
+          }
+        },
+        "derived_from": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "license"],
+            "properties": {
+              "name": { "type": "string" },
+              "license": { "type": "string" },
+              "url": { "type": "string" },
+              "note": { "type": "string" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

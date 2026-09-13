@@ -1,0 +1,415 @@
+{
+  "name": "vitools",
+  "description": "Vidoxlabs ViTools public skill and agent registry",
+  "version": "1.0.0",
+  "skills": [
+    {
+      "name": "agent-compatibility-check",
+      "url": "https://vidoxlabs.dev/vitools/skills/agent-compatibility-check/raw"
+    },
+    {
+      "name": "autonomous-pipeline",
+      "url": "https://vidoxlabs.dev/vitools/skills/autonomous-pipeline/raw"
+    },
+    {
+      "name": "bigquery-dbt",
+      "url": "https://vidoxlabs.dev/vitools/skills/bigquery-dbt/raw"
+    },
+    {
+      "name": "bigquery-development",
+      "url": "https://vidoxlabs.dev/vitools/skills/bigquery-development/raw"
+    },
+    {
+      "name": "browser-automation-testing",
+      "url": "https://vidoxlabs.dev/vitools/skills/browser-automation-testing/raw"
+    },
+    {
+      "name": "browser-testing",
+      "url": "https://vidoxlabs.dev/vitools/skills/browser-testing/raw"
+    },
+    {
+      "name": "challenge-my-thinking",
+      "url": "https://vidoxlabs.dev/vitools/skills/challenge-my-thinking/raw"
+    },
+    {
+      "name": "check-compiler-errors",
+      "url": "https://vidoxlabs.dev/vitools/skills/check-compiler-errors/raw"
+    },
+    {
+      "name": "clean-stale-branches",
+      "url": "https://vidoxlabs.dev/vitools/skills/clean-stale-branches/raw"
+    },
+    {
+      "name": "cli-for-agents",
+      "url": "https://vidoxlabs.dev/vitools/skills/cli-for-agents/raw"
+    },
+    {
+      "name": "code-quality-review",
+      "url": "https://vidoxlabs.dev/vitools/skills/code-quality-review/raw"
+    },
+    {
+      "name": "code-simplification",
+      "url": "https://vidoxlabs.dev/vitools/skills/code-simplification/raw"
+    },
+    {
+      "name": "codebase-architect",
+      "url": "https://vidoxlabs.dev/vitools/skills/codebase-architect/raw"
+    },
+    {
+      "name": "community-server-design",
+      "url": "https://vidoxlabs.dev/vitools/skills/community-server-design/raw"
+    },
+    {
+      "name": "content-experimentation-best-practices",
+      "url": "https://vidoxlabs.dev/vitools/skills/content-experimentation-best-practices/raw"
+    },
+    {
+      "name": "content-modeling",
+      "url": "https://vidoxlabs.dev/vitools/skills/content-modeling/raw"
+    },
+    {
+      "name": "context-extraction",
+      "url": "https://vidoxlabs.dev/vitools/skills/context-extraction/raw"
+    },
+    {
+      "name": "control-cli",
+      "url": "https://vidoxlabs.dev/vitools/skills/control-cli/raw"
+    },
+    {
+      "name": "control-ui",
+      "url": "https://vidoxlabs.dev/vitools/skills/control-ui/raw"
+    },
+    {
+      "name": "dashboard-building",
+      "url": "https://vidoxlabs.dev/vitools/skills/dashboard-building/raw"
+    },
+    {
+      "name": "data-analysis",
+      "url": "https://vidoxlabs.dev/vitools/skills/data-analysis/raw"
+    },
+    {
+      "name": "data-apps",
+      "url": "https://vidoxlabs.dev/vitools/skills/data-apps/raw"
+    },
+    {
+      "name": "data-exploration",
+      "url": "https://vidoxlabs.dev/vitools/skills/data-exploration/raw"
+    },
+    {
+      "name": "data-loss-prevention",
+      "url": "https://vidoxlabs.dev/vitools/skills/data-loss-prevention/raw"
+    },
+    {
+      "name": "data-quality",
+      "url": "https://vidoxlabs.dev/vitools/skills/data-quality/raw"
+    },
+    {
+      "name": "data-visualization",
+      "url": "https://vidoxlabs.dev/vitools/skills/data-visualization/raw"
+    },
+    {
+      "name": "dataflow-streaming",
+      "url": "https://vidoxlabs.dev/vitools/skills/dataflow-streaming/raw"
+    },
+    {
+      "name": "deep-research",
+      "url": "https://vidoxlabs.dev/vitools/skills/deep-research/raw"
+    },
+    {
+      "name": "design-system-adherence",
+      "url": "https://vidoxlabs.dev/vitools/skills/design-system-adherence/raw"
+    },
+    {
+      "name": "deslop",
+      "url": "https://vidoxlabs.dev/vitools/skills/deslop/raw"
+    },
+    {
+      "name": "document-coauthoring",
+      "url": "https://vidoxlabs.dev/vitools/skills/document-coauthoring/raw"
+    },
+    {
+      "name": "documentation-canvas",
+      "url": "https://vidoxlabs.dev/vitools/skills/documentation-canvas/raw"
+    },
+    {
+      "name": "durable-objects-patterns",
+      "url": "https://vidoxlabs.dev/vitools/skills/durable-objects-patterns/raw"
+    },
+    {
+      "name": "edge-agents",
+      "url": "https://vidoxlabs.dev/vitools/skills/edge-agents/raw"
+    },
+    {
+      "name": "evidence-answering",
+      "url": "https://vidoxlabs.dev/vitools/skills/evidence-answering/raw"
+    },
+    {
+      "name": "fastly-cli-ngwaf",
+      "url": "https://vidoxlabs.dev/vitools/skills/fastly-cli-ngwaf/raw"
+    },
+    {
+      "name": "fastly-compute",
+      "url": "https://vidoxlabs.dev/vitools/skills/fastly-compute/raw"
+    },
+    {
+      "name": "figma-code-connect",
+      "url": "https://vidoxlabs.dev/vitools/skills/figma-code-connect/raw"
+    },
+    {
+      "name": "figma-plugin-api",
+      "url": "https://vidoxlabs.dev/vitools/skills/figma-plugin-api/raw"
+    },
+    {
+      "name": "firebase-basics",
+      "url": "https://vidoxlabs.dev/vitools/skills/firebase-basics/raw"
+    },
+    {
+      "name": "firestore-patterns",
+      "url": "https://vidoxlabs.dev/vitools/skills/firestore-patterns/raw"
+    },
+    {
+      "name": "fix-ci",
+      "url": "https://vidoxlabs.dev/vitools/skills/fix-ci/raw"
+    },
+    {
+      "name": "fix-merge-conflicts",
+      "url": "https://vidoxlabs.dev/vitools/skills/fix-merge-conflicts/raw"
+    },
+    {
+      "name": "gcp-data-pipelines",
+      "url": "https://vidoxlabs.dev/vitools/skills/gcp-data-pipelines/raw"
+    },
+    {
+      "name": "get-pr-comments",
+      "url": "https://vidoxlabs.dev/vitools/skills/get-pr-comments/raw"
+    },
+    {
+      "name": "gradio-ui",
+      "url": "https://vidoxlabs.dev/vitools/skills/gradio-ui/raw"
+    },
+    {
+      "name": "huggingface-datasets",
+      "url": "https://vidoxlabs.dev/vitools/skills/huggingface-datasets/raw"
+    },
+    {
+      "name": "image-generation-guidance",
+      "url": "https://vidoxlabs.dev/vitools/skills/image-generation-guidance/raw"
+    },
+    {
+      "name": "infrastructure-audit",
+      "url": "https://vidoxlabs.dev/vitools/skills/infrastructure-audit/raw"
+    },
+    {
+      "name": "internal-comms",
+      "url": "https://vidoxlabs.dev/vitools/skills/internal-comms/raw"
+    },
+    {
+      "name": "loop-on-ci",
+      "url": "https://vidoxlabs.dev/vitools/skills/loop-on-ci/raw"
+    },
+    {
+      "name": "make-pr-easy-to-review",
+      "url": "https://vidoxlabs.dev/vitools/skills/make-pr-easy-to-review/raw"
+    },
+    {
+      "name": "mcp-server-building",
+      "url": "https://vidoxlabs.dev/vitools/skills/mcp-server-building/raw"
+    },
+    {
+      "name": "meeting-preparation",
+      "url": "https://vidoxlabs.dev/vitools/skills/meeting-preparation/raw"
+    },
+    {
+      "name": "memory-consolidation",
+      "url": "https://vidoxlabs.dev/vitools/skills/memory-consolidation/raw"
+    },
+    {
+      "name": "memory-systems",
+      "url": "https://vidoxlabs.dev/vitools/skills/memory-systems/raw"
+    },
+    {
+      "name": "model-evaluation",
+      "url": "https://vidoxlabs.dev/vitools/skills/model-evaluation/raw"
+    },
+    {
+      "name": "new-branch-and-pr",
+      "url": "https://vidoxlabs.dev/vitools/skills/new-branch-and-pr/raw"
+    },
+    {
+      "name": "observability-monitoring",
+      "url": "https://vidoxlabs.dev/vitools/skills/observability-monitoring/raw"
+    },
+    {
+      "name": "onboarding-flow",
+      "url": "https://vidoxlabs.dev/vitools/skills/onboarding-flow/raw"
+    },
+    {
+      "name": "parallel-implementations",
+      "url": "https://vidoxlabs.dev/vitools/skills/parallel-implementations/raw"
+    },
+    {
+      "name": "pdf",
+      "url": "https://vidoxlabs.dev/vitools/skills/pdf/raw"
+    },
+    {
+      "name": "performance-optimization",
+      "url": "https://vidoxlabs.dev/vitools/skills/performance-optimization/raw"
+    },
+    {
+      "name": "playwright-testing",
+      "url": "https://vidoxlabs.dev/vitools/skills/playwright-testing/raw"
+    },
+    {
+      "name": "plugin-creation",
+      "url": "https://vidoxlabs.dev/vitools/skills/plugin-creation/raw"
+    },
+    {
+      "name": "plugin-scaffolding",
+      "url": "https://vidoxlabs.dev/vitools/skills/plugin-scaffolding/raw"
+    },
+    {
+      "name": "portable-text",
+      "url": "https://vidoxlabs.dev/vitools/skills/portable-text/raw"
+    },
+    {
+      "name": "pr-walkthrough",
+      "url": "https://vidoxlabs.dev/vitools/skills/pr-walkthrough/raw"
+    },
+    {
+      "name": "project-planning-visual",
+      "url": "https://vidoxlabs.dev/vitools/skills/project-planning-visual/raw"
+    },
+    {
+      "name": "release-notes",
+      "url": "https://vidoxlabs.dev/vitools/skills/release-notes/raw"
+    },
+    {
+      "name": "repo-review",
+      "url": "https://vidoxlabs.dev/vitools/skills/repo-review/raw"
+    },
+    {
+      "name": "repo-scaffold",
+      "url": "https://vidoxlabs.dev/vitools/skills/repo-scaffold/raw"
+    },
+    {
+      "name": "research-synthesis-tool",
+      "url": "https://vidoxlabs.dev/vitools/skills/research-synthesis-tool/raw"
+    },
+    {
+      "name": "review-and-ship",
+      "url": "https://vidoxlabs.dev/vitools/skills/review-and-ship/raw"
+    },
+    {
+      "name": "run-smoke-tests",
+      "url": "https://vidoxlabs.dev/vitools/skills/run-smoke-tests/raw"
+    },
+    {
+      "name": "sandboxed-execution",
+      "url": "https://vidoxlabs.dev/vitools/skills/sandboxed-execution/raw"
+    },
+    {
+      "name": "security-monitoring",
+      "url": "https://vidoxlabs.dev/vitools/skills/security-monitoring/raw"
+    },
+    {
+      "name": "seo-aeo-best-practices",
+      "url": "https://vidoxlabs.dev/vitools/skills/seo-aeo-best-practices/raw"
+    },
+    {
+      "name": "skill-creation",
+      "url": "https://vidoxlabs.dev/vitools/skills/skill-creation/raw"
+    },
+    {
+      "name": "skill-mining",
+      "url": "https://vidoxlabs.dev/vitools/skills/skill-mining/raw"
+    },
+    {
+      "name": "skills-reviewer",
+      "url": "https://vidoxlabs.dev/vitools/skills/skills-reviewer/raw"
+    },
+    {
+      "name": "skills-template",
+      "url": "https://vidoxlabs.dev/vitools/skills/skills-template/raw"
+    },
+    {
+      "name": "sql-queries",
+      "url": "https://vidoxlabs.dev/vitools/skills/sql-queries/raw"
+    },
+    {
+      "name": "stakeholder-translator",
+      "url": "https://vidoxlabs.dev/vitools/skills/stakeholder-translator/raw"
+    },
+    {
+      "name": "statistical-analysis",
+      "url": "https://vidoxlabs.dev/vitools/skills/statistical-analysis/raw"
+    },
+    {
+      "name": "structured-commits",
+      "url": "https://vidoxlabs.dev/vitools/skills/structured-commits/raw"
+    },
+    {
+      "name": "structured-debugging",
+      "url": "https://vidoxlabs.dev/vitools/skills/structured-debugging/raw"
+    },
+    {
+      "name": "structured-extraction",
+      "url": "https://vidoxlabs.dev/vitools/skills/structured-extraction/raw"
+    },
+    {
+      "name": "technical-planning",
+      "url": "https://vidoxlabs.dev/vitools/skills/technical-planning/raw"
+    },
+    {
+      "name": "transcript-learning",
+      "url": "https://vidoxlabs.dev/vitools/skills/transcript-learning/raw"
+    },
+    {
+      "name": "v37-validation",
+      "url": "https://vidoxlabs.dev/vitools/skills/v37-validation/raw"
+    },
+    {
+      "name": "vcl-testing",
+      "url": "https://vidoxlabs.dev/vitools/skills/vcl-testing/raw"
+    },
+    {
+      "name": "verify-this",
+      "url": "https://vidoxlabs.dev/vitools/skills/verify-this/raw"
+    },
+    {
+      "name": "viceroy",
+      "url": "https://vidoxlabs.dev/vitools/skills/viceroy/raw"
+    },
+    {
+      "name": "web-performance",
+      "url": "https://vidoxlabs.dev/vitools/skills/web-performance/raw"
+    },
+    {
+      "name": "weekly-review",
+      "url": "https://vidoxlabs.dev/vitools/skills/weekly-review/raw"
+    },
+    {
+      "name": "what-did-i-get-done",
+      "url": "https://vidoxlabs.dev/vitools/skills/what-did-i-get-done/raw"
+    },
+    {
+      "name": "work-verification",
+      "url": "https://vidoxlabs.dev/vitools/skills/work-verification/raw"
+    },
+    {
+      "name": "workers-production",
+      "url": "https://vidoxlabs.dev/vitools/skills/workers-production/raw"
+    },
+    {
+      "name": "worktree-management",
+      "url": "https://vidoxlabs.dev/vitools/skills/worktree-management/raw"
+    },
+    {
+      "name": "wrangler-cli",
+      "url": "https://vidoxlabs.dev/vitools/skills/wrangler-cli/raw"
+    },
+    {
+      "name": "xvcl",
+      "url": "https://vidoxlabs.dev/vitools/skills/xvcl/raw"
+    }
+  ]
+}

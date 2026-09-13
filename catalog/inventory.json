@@ -1,0 +1,165 @@
+{
+  "root": ".",
+  "items": [
+    {
+      "path": "skills/data-loss-prevention",
+      "kind": "skill",
+      "status": "promoted"
+    },
+    {
+      "path": "skills/evidence-answering",
+      "kind": "skill",
+      "status": "promoted"
+    },
+    {
+      "path": "skills/skill-mining",
+      "kind": "skill",
+      "status": "promoted"
+    },
+    {
+      "path": "skills/skills-template",
+      "kind": "skill",
+      "status": "promoted"
+    },
+    {
+      "path": "skills/v37-validation",
+      "kind": "skill",
+      "status": "promoted"
+    },
+    {
+      "path": "agents/legal-gate",
+      "kind": "agent",
+      "status": "promoted"
+    },
+    {
+      "path": "agents/rewrite-orchestrator",
+      "kind": "agent",
+      "status": "promoted"
+    },
+    {
+      "path": "agents/skill-author",
+      "kind": "agent",
+      "status": "promoted"
+    },
+    {
+      "path": "agents/vitools-catalog-maintainer",
+      "kind": "agent",
+      "status": "promoted"
+    },
+    {
+      "path": "plugins/Plugins.md",
+      "kind": "plugin",
+      "status": "unreviewed"
+    },
+    {
+      "path": "plugins/agent-compatibility",
+      "kind": "plugin",
+      "status": "unreviewed"
+    },
+    {
+      "path": "plugins/browse",
+      "kind": "plugin",
+      "status": "unreviewed"
+    },
+    {
+      "path": "plugins/chrome-devtools-plugin",
+      "kind": "plugin",
+      "status": "unreviewed"
+    },
+    {
+      "path": "plugins/cli-for-agent",
+      "kind": "plugin",
+      "status": "unreviewed"
+    },
+    {
+      "path": "plugins/cloudflare",
+      "kind": "plugin",
+      "status": "unreviewed"
+    },
+    {
+      "path": "plugins/coding-tutor",
+      "kind": "plugin",
+      "status": "unreviewed"
+    },
+    {
+      "path": "plugins/compound-engineering",
+      "kind": "plugin",
+      "status": "unreviewed"
+    },
+    {
+      "path": "plugins/context7-plugin",
+      "kind": "plugin",
+      "status": "unreviewed"
+    },
+    {
+      "path": "plugins/continual-learning",
+      "kind": "plugin",
+      "status": "unreviewed"
+    },
+    {
+      "path": "plugins/create-plugin",
+      "kind": "plugin",
+      "status": "unreviewed"
+    },
+    {
+      "path": "plugins/cursor-sdk",
+      "kind": "plugin",
+      "status": "unreviewed"
+    },
+    {
+      "path": "plugins/cursor-team-kit",
+      "kind": "plugin",
+      "status": "unreviewed"
+    },
+    {
+      "path": "plugins/docs-canvas",
+      "kind": "plugin",
+      "status": "unreviewed"
+    },
+    {
+      "path": "plugins/elastic",
+      "kind": "plugin",
+      "status": "unreviewed"
+    },
+    {
+      "path": "plugins/firebase",
+      "kind": "plugin",
+      "status": "unreviewed"
+    },
+    {
+      "path": "plugins/google-antigravity-sdk",
+      "kind": "plugin",
+      "status": "unreviewed"
+    },
+    {
+      "path": "plugins/modern-web-guidance-plugin",
+      "kind": "plugin",
+      "status": "unreviewed"
+    },
+    {
+      "path": "plugins/orchestrate",
+      "kind": "plugin",
+      "status": "unreviewed"
+    },
+    {
+      "path": "plugins/paper-desktop",
+      "kind": "plugin",
+      "status": "unreviewed"
+    },
+    {
+      "path": "plugins/pr-review-canvas",
+      "kind": "plugin",
+      "status": "unreviewed"
+    },
+    {
+      "path": "plugins/render",
+      "kind": "plugin",
+      "status": "unreviewed"
+    },
+    {
+      "path": "plugins/svelte",
+      "kind": "plugin",
+      "status": "unreviewed"
+    }
+  ]
+}

@@ -1,0 +1,321 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-09-13T17:18:36.564456+00:00",
+  "source_commit": "7bd4ba9f72dae33712dcee9b3d0d7eb2d35a8fd5",
+  "homepage": "https://vidoxlabs.dev/vitools",
+  "mcp": "https://mcp.vidoxlabs.dev/vitools",
+  "repo": "https://github.com/Vidoxlabs/vitools-public",
+  "counts": {
+    "skills": 5,
+    "agents": 4,
+    "archived_vendor": 0
+  },
+  "items": [
+    {
+      "id": "skill:data-loss-prevention",
+      "kind": "skill",
+      "slug": "data-loss-prevention",
+      "name": "data-loss-prevention",
+      "title": "Data Loss Prevention",
+      "description": "-\n  Halt before any command that causes irreversible data loss. Require\n  explicit user consent. Use when running DROP, TRUNCATE, DELETE without\n  WHERE, rm -rf, git reset --hard, or any destructive operation.",
+      "summary": "Halt and confirm before destructive commands",
+      "license": "MIT",
+      "origin": "derived",
+      "status": "promoted",
+      "public": true,
+      "category": "safety",
+      "tags": [
+        "safety",
+        "git",
+        "cloud",
+        "confirmation"
+      ],
+      "platforms": [
+        "claude-code",
+        "cursor",
+        "copilot",
+        "opencode",
+        "generic"
+      ],
+      "path": "skills/data-loss-prevention/SKILL.md",
+      "html_url": "https://vidoxlabs.dev/vitools/skills/data-loss-prevention",
+      "raw_url": "https://vidoxlabs.dev/vitools/raw/skills/data-loss-prevention.md",
+      "mcp_uri": "vitools://skill/data-loss-prevention",
+      "install": {
+        "cursor": "curl -fsSL https://vidoxlabs.dev/vitools/raw/skills/data-loss-prevention.md -o .cursor/skills/data-loss-prevention/SKILL.md",
+        "agent_prompt": "Fetch https://vidoxlabs.dev/vitools/raw/skills/data-loss-prevention.md and install it as a project skill at skills/data-loss-prevention/SKILL.md. Follow its Procedure. Do not modify Guardrails."
+      },
+      "derived_from": [
+        {
+          "name": "google-accidental-data-loss-prevention",
+          "license": "Apache-2.0"
+        }
+      ]
+    },
+    {
+      "id": "skill:evidence-answering",
+      "kind": "skill",
+      "slug": "evidence-answering",
+      "name": "evidence-answering",
+      "title": "Evidence-Governed Answering",
+      "description": "-\n  Ensure responses and decisions are evidence-governed when making claims\n  about Vidoxlabs systems. Use when producing conclusions, recommendations,\n  or documentation that will be treated as canonical. Require citations,\n  links, or artifacts to support each claim.",
+      "summary": "Require evidence for claims about Vidoxlabs systems.",
+      "license": "MIT",
+      "origin": "vidoxlabs",
+      "status": "promoted",
+      "public": true,
+      "category": "docs",
+      "tags": [
+        "docs",
+        "evidence",
+        "citations",
+        "guardrails"
+      ],
+      "platforms": [
+        "claude-code",
+        "cursor",
+        "copilot",
+        "opencode",
+        "generic"
+      ],
+      "path": "skills/evidence-answering/SKILL.md",
+      "html_url": "https://vidoxlabs.dev/vitools/skills/evidence-answering",
+      "raw_url": "https://vidoxlabs.dev/vitools/raw/skills/evidence-answering.md",
+      "mcp_uri": "vitools://skill/evidence-answering",
+      "install": {
+        "cursor": "curl -fsSL https://vidoxlabs.dev/vitools/raw/skills/evidence-answering.md -o .cursor/skills/evidence-answering/SKILL.md",
+        "agent_prompt": "Fetch https://vidoxlabs.dev/vitools/raw/skills/evidence-answering.md and install it as a project skill at skills/evidence-answering/SKILL.md. Follow its Procedure. Do not modify Guardrails."
+      }
+    },
+    {
+      "id": "skill:skill-mining",
+      "kind": "skill",
+      "slug": "skill-mining",
+      "name": "skill-mining",
+      "title": "Skill Mining From Repos",
+      "description": "-\n  Mine external skill repositories into Vidoxlabs-native skills. Use when\n  adding or converting a reference skill into a first-party Vidoxlabs\n  skill with original prose and canonical structure.",
+      "summary": "Mine external repos into Vidoxlabs-native skills",
+      "license": "MIT",
+      "origin": "vidoxlabs",
+      "status": "promoted",
+      "public": true,
+      "category": "docs",
+      "tags": [
+        "skills",
+        "mining",
+        "intake"
+      ],
+      "platforms": [
+        "claude-code",
+        "cursor",
+        "copilot",
+        "opencode",
+        "generic"
+      ],
+      "path": "skills/skill-mining/SKILL.md",
+      "html_url": "https://vidoxlabs.dev/vitools/skills/skill-mining",
+      "raw_url": "https://vidoxlabs.dev/vitools/raw/skills/skill-mining.md",
+      "mcp_uri": "vitools://skill/skill-mining",
+      "install": {
+        "cursor": "curl -fsSL https://vidoxlabs.dev/vitools/raw/skills/skill-mining.md -o .cursor/skills/skill-mining/SKILL.md",
+        "agent_prompt": "Fetch https://vidoxlabs.dev/vitools/raw/skills/skill-mining.md and install it as a project skill at skills/skill-mining/SKILL.md. Follow its Procedure. Do not modify Guardrails."
+      }
+    },
+    {
+      "id": "skill:skills-template",
+      "kind": "skill",
+      "slug": "skills-template",
+      "name": "skills-template",
+      "title": "Skills Formatting Standard",
+      "description": "-\n  Canonical formatting standard for Vidoxlabs skills. Defines required\n  sections, frontmatter fields, and quality gates. Use when creating or\n  rewriting a skill to ensure consistency and agent-consumability.",
+      "summary": "Canonical formatting standard for Vidoxlabs skills",
+      "license": "MIT",
+      "origin": "vidoxlabs",
+      "status": "promoted",
+      "public": true,
+      "category": "docs",
+      "tags": [
+        "skills",
+        "template",
+        "format"
+      ],
+      "platforms": [
+        "claude-code",
+        "cursor",
+        "copilot",
+        "opencode",
+        "generic"
+      ],
+      "path": "skills/skills-template/SKILL.md",
+      "html_url": "https://vidoxlabs.dev/vitools/skills/skills-template",
+      "raw_url": "https://vidoxlabs.dev/vitools/raw/skills/skills-template.md",
+      "mcp_uri": "vitools://skill/skills-template",
+      "install": {
+        "cursor": "curl -fsSL https://vidoxlabs.dev/vitools/raw/skills/skills-template.md -o .cursor/skills/skills-template/SKILL.md",
+        "agent_prompt": "Fetch https://vidoxlabs.dev/vitools/raw/skills/skills-template.md and install it as a project skill at skills/skills-template/SKILL.md. Follow its Procedure. Do not modify Guardrails."
+      }
+    },
+    {
+      "id": "skill:v37-validation",
+      "kind": "skill",
+      "slug": "v37-validation",
+      "name": "v37-validation",
+      "title": "V37 Validation",
+      "description": "-\n  Validate changes against operational expectations using\n  evidence-governed verification. Use before merging changes that affect\n  infrastructure, orchestration, or operational safety, and when\n  investigating suspected regressions.",
+      "summary": "Validate changes against operational expectations",
+      "license": "MIT",
+      "origin": "vidoxlabs",
+      "status": "promoted",
+      "public": true,
+      "category": "safety",
+      "tags": [
+        "safety",
+        "validation",
+        "infra"
+      ],
+      "platforms": [
+        "claude-code",
+        "cursor",
+        "copilot",
+        "opencode",
+        "generic"
+      ],
+      "path": "skills/v37-validation/SKILL.md",
+      "html_url": "https://vidoxlabs.dev/vitools/skills/v37-validation",
+      "raw_url": "https://vidoxlabs.dev/vitools/raw/skills/v37-validation.md",
+      "mcp_uri": "vitools://skill/v37-validation",
+      "install": {
+        "cursor": "curl -fsSL https://vidoxlabs.dev/vitools/raw/skills/v37-validation.md -o .cursor/skills/v37-validation/SKILL.md",
+        "agent_prompt": "Fetch https://vidoxlabs.dev/vitools/raw/skills/v37-validation.md and install it as a project skill at skills/v37-validation/SKILL.md. Follow its Procedure. Do not modify Guardrails."
+      }
+    },
+    {
+      "id": "agent:legal-gate",
+      "kind": "agent",
+      "slug": "legal-gate",
+      "name": "legal-gate",
+      "title": "Legal Gate",
+      "description": ">-\n  Reviews license and origin of skill and agent files. Checks for vendor\n  branding, missing licenses, and vendor archive contamination. Use when\n  validating a skill or agent before promotion.\nlicense: MIT\nversion: 1.0.0\nmetadata:\n  kind: agent\n  status: promoted\n  origin: vidoxlabs\n  publisher: vidoxlabs\n  category: safety\n  tags: [legal, license, safety]\n  platforms: [claude-code, cursor, copilot, opencode, generic]\n  site:\n    slug: legal-gate\n    summary: License and origin review for skills\n  review:\n    last: 2026-09-12\n    next: 2027-01-12",
+      "summary": ">-\n  Reviews license and origin of skill and agent files. Checks for vendor\n  branding, missing licenses, and vendor arc",
+      "license": "MIT",
+      "origin": "vidoxlabs",
+      "status": "promoted",
+      "public": true,
+      "category": "agents",
+      "tags": [
+        "agents"
+      ],
+      "platforms": [
+        "claude-code",
+        "cursor",
+        "copilot",
+        "opencode",
+        "generic"
+      ],
+      "path": "agents/legal-gate/AGENT.md",
+      "html_url": "https://vidoxlabs.dev/vitools/agents/legal-gate",
+      "raw_url": "https://vidoxlabs.dev/vitools/raw/agents/legal-gate.md",
+      "mcp_uri": "vitools://agent/legal-gate",
+      "install": {
+        "cursor": "curl -fsSL https://vidoxlabs.dev/vitools/raw/agents/legal-gate.md -o .cursor/agents/legal-gate/AGENT.md",
+        "agent_prompt": "Fetch https://vidoxlabs.dev/vitools/raw/agents/legal-gate.md and install it as a project agent at agents/legal-gate/AGENT.md. Follow its Operating loop. Do not modify Guardrails."
+      }
+    },
+    {
+      "id": "agent:rewrite-orchestrator",
+      "kind": "agent",
+      "slug": "rewrite-orchestrator",
+      "name": "rewrite-orchestrator",
+      "title": "Rewrite Orchestrator",
+      "description": ">-\n  Coordinates catalog, concept extraction, rewrite, legal, and\n  verification sub-agents for the ViTools rewrite pipeline.\nlicense: MIT\nversion: 1.0.0\nmetadata:\n  kind: agent\n  status: promoted\n  origin: vidoxlabs\n  publisher: vidoxlabs\n  category: automation\n  tags: [rewrite, pipeline, coordination]\n  platforms: [claude-code, cursor, copilot, opencode, generic]\n  site:\n    slug: rewrite-orchestrator\n    summary: Coordinates the ViTools rewrite pipeline\n  review:\n    last: 2026-09-12\n    next: 2027-01-12",
+      "summary": ">-\n  Coordinates catalog, concept extraction, rewrite, legal, and\n  verification sub-agents for the ViTools rewrite pipe",
+      "license": "MIT",
+      "origin": "vidoxlabs",
+      "status": "promoted",
+      "public": true,
+      "category": "agents",
+      "tags": [
+        "agents"
+      ],
+      "platforms": [
+        "claude-code",
+        "cursor",
+        "copilot",
+        "opencode",
+        "generic"
+      ],
+      "path": "agents/rewrite-orchestrator/AGENT.md",
+      "html_url": "https://vidoxlabs.dev/vitools/agents/rewrite-orchestrator",
+      "raw_url": "https://vidoxlabs.dev/vitools/raw/agents/rewrite-orchestrator.md",
+      "mcp_uri": "vitools://agent/rewrite-orchestrator",
+      "install": {
+        "cursor": "curl -fsSL https://vidoxlabs.dev/vitools/raw/agents/rewrite-orchestrator.md -o .cursor/agents/rewrite-orchestrator/AGENT.md",
+        "agent_prompt": "Fetch https://vidoxlabs.dev/vitools/raw/agents/rewrite-orchestrator.md and install it as a project agent at agents/rewrite-orchestrator/AGENT.md. Follow its Operating loop. Do not modify Guardrails."
+      }
+    },
+    {
+      "id": "agent:skill-author",
+      "kind": "agent",
+      "slug": "skill-author",
+      "name": "skill-author",
+      "title": "Skill Author",
+      "description": ">-\n  Writes a first-party SKILL.md from a concept card or external reference.\n  Produces original Vidoxlabs prose with required sections. Use when\n  creating or rewriting a skill.\nlicense: MIT\nversion: 1.0.0\nmetadata:\n  kind: agent\n  status: promoted\n  origin: vidoxlabs\n  publisher: vidoxlabs\n  category: docs\n  tags: [skills, authoring, docs]\n  platforms: [claude-code, cursor, copilot, opencode, generic]\n  site:\n    slug: skill-author\n    summary: Writes first-party skills from concept cards\n  review:\n    last: 2026-09-12\n    next: 2027-01-12",
+      "summary": ">-\n  Writes a first-party SKILL.md from a concept card or external reference.\n  Produces original Vidoxlabs prose with r",
+      "license": "MIT",
+      "origin": "vidoxlabs",
+      "status": "promoted",
+      "public": true,
+      "category": "agents",
+      "tags": [
+        "agents"
+      ],
+      "platforms": [
+        "claude-code",
+        "cursor",
+        "copilot",
+        "opencode",
+        "generic"
+      ],
+      "path": "agents/skill-author/AGENT.md",
+      "html_url": "https://vidoxlabs.dev/vitools/agents/skill-author",
+      "raw_url": "https://vidoxlabs.dev/vitools/raw/agents/skill-author.md",
+      "mcp_uri": "vitools://agent/skill-author",
+      "install": {
+        "cursor": "curl -fsSL https://vidoxlabs.dev/vitools/raw/agents/skill-author.md -o .cursor/agents/skill-author/AGENT.md",
+        "agent_prompt": "Fetch https://vidoxlabs.dev/vitools/raw/agents/skill-author.md and install it as a project agent at agents/skill-author/AGENT.md. Follow its Operating loop. Do not modify Guardrails."
+      }
+    },
+    {
+      "id": "agent:vitools-catalog-maintainer",
+      "kind": "agent",
+      "slug": "vitools-catalog-maintainer",
+      "name": "vitools-catalog-maintainer",
+      "title": "ViTools Catalog Maintainer",
+      "description": ">-\n  Builds, validates, and maintains the ViTools public catalog. Runs the\n  catalog builder, legal gate, and inventory checks. Use when adding or\n  updating skills or agents in the catalog.\nlicense: MIT\nversion: 1.0.0\nmetadata:\n  kind: agent\n  status: promoted\n  origin: vidoxlabs\n  publisher: vidoxlabs\n  category: automation\n  tags: [catalog, automation, validation]\n  platforms: [claude-code, cursor, copilot, opencode, generic]\n  site:\n    slug: vitools-catalog-maintainer\n    summary: Builds and validates the ViTools catalog\n  review:\n    last: 2026-09-12\n    next: 2027-01-12",
+      "summary": ">-\n  Builds, validates, and maintains the ViTools public catalog. Runs the\n  catalog builder, legal gate, and inventory ",
+      "license": "MIT",
+      "origin": "vidoxlabs",
+      "status": "promoted",
+      "public": true,
+      "category": "agents",
+      "tags": [
+        "agents"
+      ],
+      "platforms": [
+        "claude-code",
+        "cursor",
+        "copilot",
+        "opencode",
+        "generic"
+      ],
+      "path": "agents/vitools-catalog-maintainer/AGENT.md",
+      "html_url": "https://vidoxlabs.dev/vitools/agents/vitools-catalog-maintainer",
+      "raw_url": "https://vidoxlabs.dev/vitools/raw/agents/vitools-catalog-maintainer.md",
+      "mcp_uri": "vitools://agent/vitools-catalog-maintainer",
+      "install": {
+        "cursor": "curl -fsSL https://vidoxlabs.dev/vitools/raw/agents/vitools-catalog-maintainer.md -o .cursor/agents/vitools-catalog-maintainer/AGENT.md",
+        "agent_prompt": "Fetch https://vidoxlabs.dev/vitools/raw/agents/vitools-catalog-maintainer.md and install it as a project agent at agents/vitools-catalog-maintainer/AGENT.md. Follow its Operating loop. Do not modify Guardrails."
+      }
+    }
+  ]
+}

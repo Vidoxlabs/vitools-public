@@ -1,62 +1,91 @@
+---
+name: skill-mining
+description: >-
+  Mine external skill repositories into Vidoxlabs-native skills. Use when
+  adding or converting a reference skill into a first-party Vidoxlabs
+  skill with original prose and canonical structure.
+license: MIT
+version: 1.0.0
+metadata:
+  kind: skill
+  status: promoted
+  origin: vidoxlabs
+  publisher: vidoxlabs
+  category: docs
+  tags: [skills, mining, intake]
+  platforms: [claude-code, cursor, copilot, opencode, generic]
+  site:
+    slug: skill-mining
+    summary: Mine external repos into Vidoxlabs-native skills
+  review:
+    last: 2026-09-12
+    next: 2027-01-12
+---
+
 # Skill Mining From Repos
 
-Domain: Skills
-Lifecycle: Intake
-Owner: Vioxniv
-Skill Type: Procedure
+## When to use
 
-<aside>
-🧩
+Use this skill when adding a new external skill repository to the
+Vidoxlabs catalog or when converting a reference skill into a first-party
+Vidoxlabs skill. Also use when reviewing an external skill for potential
+intake.
 
-This is an **Intake** skill. Complete Examples + Verification before promoting.
+## Procedure
 
-</aside>
-
-## Summary
-
-- Procedure for mining external skill repositories into Vidoxlabs-native skills.
-
-## When to Use (Triggers)
-
-- Adding a new repo/path to Skills References
-- Converting a reference into an internal Skill
-
-## Inputs
-
-- Skills Reference row (repo/path URL)
-- Target agent(s) that will consume the skill (optional)
-
-## Outputs
-
-- A new internal Skill page with standardized structure and optional Evidence links
-
-## Procedure / Steps
-
-1. Capture the external reference (repo/path) in **Skills References** with Status = Inbox/Reviewing.
-2. Review the reference and extract: intent, triggers, steps, guardrails, examples, verification.
-3. Create an internal Skill using the canonical template.
-4. Link the reference row via **Evidence** (optional but preferred).
-5. Keep the internal skill scoped and agent-agnostic unless explicitly agent-specific.
+1. Capture the external reference in the catalog inventory with status
+   set to reviewing.
+2. Review the external skill and extract only the concept: intent,
+   triggers, procedural steps, guardrails, and verification approach.
+3. Create a new skill file using the canonical template with original
+   Vidoxlabs prose. Do not copy body text from the source.
+4. Record the external reference in the frontmatter using the
+   `derived_from` field when the concept originates from a vendor skill.
+5. Keep the skill scoped and agent-agnostic unless it is explicitly
+   agent-specific.
+6. Run the legal gate to confirm no vendor body text was carried over.
+7. Set lifecycle to promoted only after guardrails, examples, and
+   verification sections are complete.
 
 ## Guardrails
 
-- Do not import vendor-specific assumptions without noting constraints.
-- Avoid copying large blobs; extract the reusable pattern.
+- Do not import vendor-specific assumptions without documenting the
+  constraints.
+- Do not copy large blobs of text from the source. Extract the reusable
+  pattern and rewrite it in original prose.
+- Never publish vendored body text as first-party content.
+- If the source lacks a clear license, do not derive from it until the
+  license is confirmed.
 
 ## Examples
 
 ### Good
 
-- “Extracted a 10-step workflow + guardrails; linked sources; added verification.”
+> Reviewed an external skill repo, extracted the 10-step workflow and
+> guardrails, wrote original prose with Vidoxlabs framing, linked the
+> source via `derived_from`, and passed the legal gate.
 
 ### Bad
 
-- “Copied README content wholesale with no internal framing.”
+> Copied the README content wholesale with no internal framing, no
+> guardrails, and no verification section.
 
 ## Verification
 
-- Confirm the internal skill can be followed as-written without needing the original repo open.
+- Confirm the skill can be followed as written without needing the
+  original repository open.
+- Run the legal gate check on the new skill file.
+- Verify that all required sections are present: when to use, procedure,
+  guardrails, examples, verification, install.
 
-## Sources / Evidence (Optional)
+## Install
 
-- Link the Skills References row and any key docs.
+Repository installers (`npx skills add`, Claude marketplace) are not advertised for this revision: they follow GitHub default `main`, which is not this curated set.
+
+```bash
+curl -fsSL https://vidoxlabs.dev/vitools/raw/skills/skill-mining.md -o .cursor/skills/skill-mining/SKILL.md
+```
+
+```text
+Fetch https://vidoxlabs.dev/vitools/raw/skills/skill-mining.md and install it as a project skill at skills/skill-mining/SKILL.md. Follow its Procedure. Do not modify Guardrails.
+```

@@ -50,7 +50,7 @@ Add this to your MCP client configuration:
 MCP tools exposed by the worker:
 
 | Tool | Purpose |
-|------|---------|
+| ------ | --------- |
 | `vitools.list` | Filter by kind, category, tag, status |
 | `vitools.get` | Return one unit's frontmatter + body URL |
 | `vitools.categories` | Category counts |

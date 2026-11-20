@@ -9,7 +9,7 @@ The ViTools catalog exposes an MCP endpoint at
 `https://mcp.vidoxlabs.dev/vitools` with these read-only tools:
 
 | Tool | Purpose |
-|------|---------|
+| ------ | --------- |
 | `vitools.list` | Filter by kind, category, tag, status |
 | `vitools.get` | Return one unit's frontmatter + body URL |
 | `vitools.categories` | Category counts |

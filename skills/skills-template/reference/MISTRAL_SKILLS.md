@@ -1,20 +1,12 @@
-Skill Creator
+# Skill Creator
 
 Use this when the user asks you to create, update, delete, or otherwise modify a Skill.
 
 Before Editing
 
-
-
-
-
 Read the existing skills/<name>/SKILL.md and any support files you need.
 
-
-
 Keep Skills concise. Put durable instructions in SKILL.md; add Markdown, plain text, CSV, JSON, or YAML support files only when they help.
-
-
 
 First-party Skills may be read-only. Editable registry Skills and newly created Skill directories can be changed.
 
@@ -39,17 +31,9 @@ First-party built-in Skills are defined in code and are read-only. Do not add vi
 
 Create, Update, Delete
 
-
-
-
-
 Create: add skills/<slug>/SKILL.md with valid frontmatter. Add support files under the same directory only when useful.
 
-
-
 Update: edit SKILL.md or editable support files in place. Preserve useful existing guidance.
-
-
 
 Delete: remove the whole Skill directory when the user asks to delete a Skill. Do not delete only SKILL.md.
 

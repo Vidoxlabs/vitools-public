@@ -77,8 +77,8 @@ npx markdownlint-cli2 "**/*.md"
 
 ## What Not To Do
 
-- Do not include vendor body text in first-party skills.
-- Do not put `claude` or `anthropic` in a first-party skill `name`.
-- Do not publish a skill without Guardrails, Examples, and Verification.
-- Do not claim counts that do not match `catalog/vitools.catalog.json`.
-- Do not reference internal hostnames, IP addresses, or private repos.
++ Do not include vendor body text in first-party skills.
++ Do not put `claude` or `anthropic` in a first-party skill `name`.
++ Do not publish a skill without Guardrails, Examples, and Verification.
++ Do not claim counts that do not match `catalog/vitools.catalog.json`.
++ Do not reference internal hostnames, IP addresses, or private repos.

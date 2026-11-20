@@ -29,7 +29,7 @@ Either approach works. The catalog is the single source of truth.
 ## Routes
 
 | Route | Purpose |
-|-------|---------|
+| ------- | --------- |
 | `/vitools` | Landing page: catalog summary, category filter, search |
 | `/vitools/skills` | All public skills (grid or list) |
 | `/vitools/skills/[slug]` | Single skill: rendered markdown, install buttons, download |
@@ -67,7 +67,7 @@ Endpoint: `https://mcp.vidoxlabs.dev/vitools`
 Tools (all read-only):
 
 | Tool | Input | Output |
-|------|-------|--------|
+| ------ | ------- | -------- |
 | `vitools.list` | `kind?`, `category?`, `tag?`, `status?` | Array of catalog items (public only) |
 | `vitools.get` | `slug` or `mcp_uri` | Single item: frontmatter + body URL |
 | `vitools.categories` | none | Category counts: `{category: count}` |

@@ -222,4 +222,4 @@ Install ViTools skills and agents as project instructions.
   Produces original Vidoxlabs prose with r
 - **vitools-catalog-maintainer**: >-
   Builds, validates, and maintains the ViTools public catalog. Runs the
-  catalog builder, legal gate, and inventory 
+  catalog builder, legal gate, and inventory

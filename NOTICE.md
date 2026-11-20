@@ -16,7 +16,7 @@ original vendor packs are not included in this repository.
 ## Derived Skill Attributions
 
 | Origin | Count | License | Note |
-|--------|-------|---------|------|
+| -------- | ------- | --------- | ------ |
 | Anthropic | 4 | Proprietary | Concept only, body rewritten |
 | Google | 9 | Apache-2.0 | Concept only, body rewritten |
 | Cloudflare | 9 | Apache-2.0 / MIT | Concept only, body rewritten |
@@ -37,7 +37,7 @@ original vendor packs are not included in this repository.
 
 Skills derived from Google and Cloudflare concepts are based on
 Apache-2.0 licensed content. The Apache License, Version 2.0 is
-available at https://www.apache.org/licenses/LICENSE-2.0.
+available at <https://www.apache.org/licenses/LICENSE-2.0>.
 
 ## Proprietary / Branding-Locked
 

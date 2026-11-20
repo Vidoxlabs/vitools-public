@@ -96,7 +96,7 @@ repo emits into `skills/` + `agents/` for the public layout.
 ### 3. Skill vs agent vs plugin definitions
 
 | Kind | Path | Entry file | Frontmatter `metadata.kind` |
-|------|------|------------|-----------------------------|
+| ------ | ------ | ------------ | ----------------------------- |
 | skill | `skills/<slug>/SKILL.md` | SKILL.md | `skill` |
 | agent | `agents/<slug>/AGENT.md` | AGENT.md | `agent` |
 | plugin | `plugins/<platform>/` | generated | `plugin` |
@@ -107,7 +107,7 @@ thin adapters, never hand-authored canonical content.
 ### 4. License policy
 
 | Class | Test | Disposition |
-|-------|------|-------------|
+| ------- | ------ | ------------- |
 | A — First-party Vidoxlabs | Author is Vidoxlabs/Vioxniv, MIT, no vendor branding, no copied body | Keep in `skills/` or `agents/`. Normalize frontmatter. |
 | B — Permissively licensed vendor | Apache-2.0 / MIT / BSD AND no branding lock AND NOTICE can be preserved | Move original to `archive/vendor/<origin>/<slug>/`. Rewrite short Vidoxlabs skill from concept only. Link `derived_from`. Preserve Apache NOTICE in `NOTICE.md`. |
 | C — Branding-locked or proprietary | Instructs "keep Anthropic branding", reserved names, non-redistributable license, missing license | Archive original. Do NOT republish body. Optional 20–40 line Vidoxlabs rewrite of the procedure idea if generic. |
@@ -122,6 +122,7 @@ are documented in each skill's `derived_from` frontmatter field.
 
 The repo produces `catalog/vitools.catalog.json` as the single machine-readable
 artifact consumed by:
+
 - `https://vidoxlabs.dev/vitools` (Astro site renders from catalog)
 - `https://mcp.vidoxlabs.dev/vitools` (MCP worker lists/filters/fetches)
 

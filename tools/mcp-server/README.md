@@ -17,7 +17,7 @@ beyond Python 3.11+ stdlib.
 ## Tools
 
 | Tool | Input | Output |
-|------|-------|--------|
+| ------ | ------- | -------- |
 | `vitools_list` | `kind?`, `category?`, `tag?` | Array of public items |
 | `vitools_get` | `slug` or `mcp_uri` | Single item with full metadata |
 | `vitools_categories` | none | Category counts |

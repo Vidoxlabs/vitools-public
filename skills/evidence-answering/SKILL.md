@@ -52,8 +52,10 @@ documentation that will be treated as canonical.
 
 ### Good
 
-> Based on `ViApp/docs/handoff.md` and the inference probe log, the
-> inference endpoint is running `qwen3.5:4b` on the cluster.
+> Based on the [Workers AI model catalog](https://developers.cloudflare.com/workers-ai/models/)
+> (retrieved 2026-09-12) and the public repository README, the deployment
+> uses `@cf/meta/llama-4-scout-17b-16e-instruct`; verified against the
+> official model page, not inferred from a chat answer.
 
 ### Bad
 

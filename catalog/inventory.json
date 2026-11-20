@@ -1,0 +1,335 @@
+{
+  "note": "Path inventory so catalog-build.py --check-inventory can see every skill, plugin, and agent directory. It is not the public admission catalog.",
+  "items": [
+    {
+      "path": "skills/agent-compatibility-check"
+    },
+    {
+      "path": "skills/autonomous-pipeline"
+    },
+    {
+      "path": "skills/bigquery-dbt"
+    },
+    {
+      "path": "skills/bigquery-development"
+    },
+    {
+      "path": "skills/browser-automation-testing"
+    },
+    {
+      "path": "skills/browser-testing"
+    },
+    {
+      "path": "skills/challenge-my-thinking"
+    },
+    {
+      "path": "skills/check-compiler-errors"
+    },
+    {
+      "path": "skills/clean-stale-branches"
+    },
+    {
+      "path": "skills/cli-for-agents"
+    },
+    {
+      "path": "skills/code-quality-review"
+    },
+    {
+      "path": "skills/code-simplification"
+    },
+    {
+      "path": "skills/codebase-architect"
+    },
+    {
+      "path": "skills/community-server-design"
+    },
+    {
+      "path": "skills/content-experimentation-best-practices"
+    },
+    {
+      "path": "skills/content-modeling"
+    },
+    {
+      "path": "skills/context-extraction"
+    },
+    {
+      "path": "skills/control-cli"
+    },
+    {
+      "path": "skills/control-ui"
+    },
+    {
+      "path": "skills/dashboard-building"
+    },
+    {
+      "path": "skills/data-analysis"
+    },
+    {
+      "path": "skills/data-apps"
+    },
+    {
+      "path": "skills/data-exploration"
+    },
+    {
+      "path": "skills/data-loss-prevention"
+    },
+    {
+      "path": "skills/data-quality"
+    },
+    {
+      "path": "skills/data-visualization"
+    },
+    {
+      "path": "skills/dataflow-streaming"
+    },
+    {
+      "path": "skills/deep-research"
+    },
+    {
+      "path": "skills/design-system-adherence"
+    },
+    {
+      "path": "skills/deslop"
+    },
+    {
+      "path": "skills/document-coauthoring"
+    },
+    {
+      "path": "skills/documentation-canvas"
+    },
+    {
+      "path": "skills/durable-objects-patterns"
+    },
+    {
+      "path": "skills/edge-agents"
+    },
+    {
+      "path": "skills/evidence-answering"
+    },
+    {
+      "path": "skills/fastly-cli-ngwaf"
+    },
+    {
+      "path": "skills/fastly-compute"
+    },
+    {
+      "path": "skills/figma-code-connect"
+    },
+    {
+      "path": "skills/figma-plugin-api"
+    },
+    {
+      "path": "skills/firebase-basics"
+    },
+    {
+      "path": "skills/firestore-patterns"
+    },
+    {
+      "path": "skills/fix-ci"
+    },
+    {
+      "path": "skills/fix-merge-conflicts"
+    },
+    {
+      "path": "skills/gcp-data-pipelines"
+    },
+    {
+      "path": "skills/get-pr-comments"
+    },
+    {
+      "path": "skills/gradio-ui"
+    },
+    {
+      "path": "skills/huggingface-datasets"
+    },
+    {
+      "path": "skills/image-generation-guidance"
+    },
+    {
+      "path": "skills/infrastructure-audit"
+    },
+    {
+      "path": "skills/internal-comms"
+    },
+    {
+      "path": "skills/loop-on-ci"
+    },
+    {
+      "path": "skills/make-pr-easy-to-review"
+    },
+    {
+      "path": "skills/mcp-server-building"
+    },
+    {
+      "path": "skills/meeting-preparation"
+    },
+    {
+      "path": "skills/memory-consolidation"
+    },
+    {
+      "path": "skills/memory-systems"
+    },
+    {
+      "path": "skills/model-evaluation"
+    },
+    {
+      "path": "skills/new-branch-and-pr"
+    },
+    {
+      "path": "skills/observability-monitoring"
+    },
+    {
+      "path": "skills/onboarding-flow"
+    },
+    {
+      "path": "skills/parallel-implementations"
+    },
+    {
+      "path": "skills/pdf"
+    },
+    {
+      "path": "skills/performance-optimization"
+    },
+    {
+      "path": "skills/playwright-testing"
+    },
+    {
+      "path": "skills/plugin-creation"
+    },
+    {
+      "path": "skills/plugin-scaffolding"
+    },
+    {
+      "path": "skills/portable-text"
+    },
+    {
+      "path": "skills/pr-walkthrough"
+    },
+    {
+      "path": "skills/project-planning-visual"
+    },
+    {
+      "path": "skills/release-notes"
+    },
+    {
+      "path": "skills/repo-review"
+    },
+    {
+      "path": "skills/repo-scaffold"
+    },
+    {
+      "path": "skills/research-synthesis-tool"
+    },
+    {
+      "path": "skills/review-and-ship"
+    },
+    {
+      "path": "skills/run-smoke-tests"
+    },
+    {
+      "path": "skills/sandboxed-execution"
+    },
+    {
+      "path": "skills/security-monitoring"
+    },
+    {
+      "path": "skills/seo-aeo-best-practices"
+    },
+    {
+      "path": "skills/skill-creation"
+    },
+    {
+      "path": "skills/skill-mining"
+    },
+    {
+      "path": "skills/skills-reviewer"
+    },
+    {
+      "path": "skills/skills-template"
+    },
+    {
+      "path": "skills/sql-queries"
+    },
+    {
+      "path": "skills/stakeholder-translator"
+    },
+    {
+      "path": "skills/statistical-analysis"
+    },
+    {
+      "path": "skills/structured-commits"
+    },
+    {
+      "path": "skills/structured-debugging"
+    },
+    {
+      "path": "skills/structured-extraction"
+    },
+    {
+      "path": "skills/technical-planning"
+    },
+    {
+      "path": "skills/transcript-learning"
+    },
+    {
+      "path": "skills/v37-validation"
+    },
+    {
+      "path": "skills/vcl-testing"
+    },
+    {
+      "path": "skills/verify-this"
+    },
+    {
+      "path": "skills/viceroy"
+    },
+    {
+      "path": "skills/web-performance"
+    },
+    {
+      "path": "skills/weekly-review"
+    },
+    {
+      "path": "skills/what-did-i-get-done"
+    },
+    {
+      "path": "skills/work-verification"
+    },
+    {
+      "path": "skills/workers-production"
+    },
+    {
+      "path": "skills/worktree-management"
+    },
+    {
+      "path": "skills/wrangler-cli"
+    },
+    {
+      "path": "skills/xvcl"
+    },
+    {
+      "path": "plugins/claude"
+    },
+    {
+      "path": "plugins/copilot"
+    },
+    {
+      "path": "plugins/cursor"
+    },
+    {
+      "path": "plugins/opencode"
+    },
+    {
+      "path": "agents/legal-gate"
+    },
+    {
+      "path": "agents/rewrite-orchestrator"
+    },
+    {
+      "path": "agents/skill-author"
+    },
+    {
+      "path": "agents/vitools-catalog-maintainer"
+    }
+  ]
+}

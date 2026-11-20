@@ -16,11 +16,7 @@ jobs:
         uses: DavidAnson/markdownlint-cli2-action@v15
         with:
           globs: '**/*.md'
-          config: >
-            {
-              "MD013": false,
-              "MD033": false
-            }
+          config: .markdownlint-cli2.jsonc
 
       - name: Validate YAML
         run: |

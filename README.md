@@ -27,14 +27,14 @@ enforces license and origin rules, an MCP server, and platform adapters.
 
 ## Current catalog
 
-Counts are computed from `catalog/vitools.catalog.json`. Run
-`python scripts/catalog-build.py` to verify.
+Counts are the admitted release in `catalog/release-admission.json`.
+Run `python3 scripts/release_catalog.py --check` to verify.
 
 | Kind            | Count |
 |-----------------|-------|
-| Skills          | 102   |
+| Skills          | 5     |
 | Agents          | 4     |
-| Archived vendor | 0     |
+| Archived vendor | 180   |
 
 ## Repository structure
 
@@ -95,11 +95,11 @@ See `CONTRIBUTING.md` for the full guide. Quick summary:
 ## Verification
 
 ```bash
-python scripts/catalog-build.py              # build catalog
-python scripts/catalog-build.py --validate   # validate against schema
-python scripts/catalog-build.py --check-inventory  # verify completeness
+python3 scripts/release_catalog.py --check   # admitted catalogs and adapters
+python3 scripts/test_release_catalog.py      # refusals and a second build
+python3 scripts/catalog-build.py --validate  # validate catalog against schema
+python3 scripts/catalog-build.py --check-inventory  # verify path inventory
 bash scripts/vitools-legal-gate.sh           # license + origin checks
-python scripts/emit-adapters.py              # regenerate plugin adapters
 ```
 
 ## Related repositories

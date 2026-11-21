@@ -5,9 +5,12 @@ Builds catalog/vitools.catalog.json from skills/ and agents/ directories.
 Validates against catalog/schema.json. Checks inventory completeness.
 
 Usage:
-  python scripts/catalog-build.py              # build catalog
+  python scripts/release_catalog.py --check    # regenerate the admitted release and compare it
   python scripts/catalog-build.py --validate   # validate catalog against schema
   python scripts/catalog-build.py --check-inventory  # verify inventory completeness
+
+A scan of every skill is not the release command. Release files come from
+catalog/release-admission.json and the pinned body commit.
 """
 import os
 import re
@@ -459,7 +462,12 @@ def main():
         ok = check_inventory()
         sys.exit(0 if ok else 1)
     else:
-        build_catalog()
+        print(
+            "Refusing to scan every skill into the release catalogs. "
+            "Run: python3 scripts/release_catalog.py --check",
+            file=sys.stderr,
+        )
+        sys.exit(2)
 
 
 if __name__ == "__main__":

@@ -4,7 +4,7 @@ on:
   push:
     branches: [main, "vitools/*"]
   pull_request:
-    branches: [main]
+    branches: [main, "vitools/*"]
 
 jobs:
   lint:
@@ -34,9 +34,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Build catalog
-        run: python3 scripts/catalog-build.py
+      - name: Generate the admitted release and compare it
+        run: python3 scripts/release_catalog.py --check
+
+      - name: Prove refusals and two equivalent builds
+        run: python3 scripts/test_release_catalog.py
 
       - name: Validate catalog
         run: python3 scripts/catalog-build.py --validate

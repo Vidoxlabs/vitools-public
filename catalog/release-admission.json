@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "body_source_commit": "270d02569d2a5073356c6042bf9539b61ea16b21",
+  "catalog_release_commit": "179ac7d7dfd4026bc27c737ed4e373838708fe74",
+  "generated_at": "2026-09-13T01:31:21.461726+00:00",
+  "archived_vendor": 180,
+  "ids": [
+    "skill:data-loss-prevention",
+    "skill:evidence-answering",
+    "skill:skill-mining",
+    "skill:skills-template",
+    "skill:v37-validation",
+    "agent:legal-gate",
+    "agent:rewrite-orchestrator",
+    "agent:skill-author",
+    "agent:vitools-catalog-maintainer"
+  ],
+  "bodies": {
+    "skill:data-loss-prevention": "3f95250f0a9fac68ad8565b71b34c2469ccb2f861e88e5ad02472ef4d24e1521",
+    "skill:evidence-answering": "ffbb9ad5c2bfdb5261a290528d2822452bbbc278698e35ea2ab312ee041020a5",
+    "skill:skill-mining": "e5fd1240a639b118021fa7d95abeffb0558ddf78c3eb9c5ae64c96fbe9373165",
+    "skill:skills-template": "1835ab94ce275b2c50d321481bf2554756d0d1f91ede850b7e9ae986fe2f9621",
+    "skill:v37-validation": "f86577caa8336dcdbe72cebbdf8c0109da0f12b2786317d5fc87cfd827fe8d0c",
+    "agent:legal-gate": "0441d203c888a39ae1a37eb8a116c7219749008dbfa2f238831c87df65141ddd",
+    "agent:rewrite-orchestrator": "a545701a20c9543aa57f4b93d1c8bc80dc2141457133d69d8ed083beebba5363",
+    "agent:skill-author": "bab692f0d1af743aa7f718c98518ee05b081773448b5ee7ff5389688832e3d61",
+    "agent:vitools-catalog-maintainer": "0f214ff185d92a2c44f48c75037c8f751a75422d38fea1ca4e8b7b06db0de7d9"
+  }
+}
